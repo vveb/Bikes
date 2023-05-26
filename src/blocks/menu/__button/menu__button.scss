@@ -1,8 +1,10 @@
 .menu__button {
+  @include flex(row, start, center);
   cursor: pointer;
   height: 19px;
-  display: flex;
-  align-items: center;
+  width: 22px;
+  border: 0;
+  @extend %zeroSpaces;
 }
 
 .menu__button-icon {
