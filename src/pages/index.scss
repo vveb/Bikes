@@ -2,3 +2,12 @@
 @import "../vendor/fonts.css";
 
 @import "../root.scss";
+
+@import "../blocks/page/page.scss";
+
+@import "../blocks/header/header.scss";
+
+@import "../blocks/menu/menu.scss";
+@import "../blocks/menu/__container/menu__container.scss";
+@import "../blocks/menu/__item/menu__item.scss";
+@import "../blocks/menu/__button/menu__button.scss";

@@ -1,0 +1,10 @@
+.header {
+  @extend %limitedWidthSection;
+  @include flex(row-reverse, space-between, center);
+  padding: 28px 120px 28px 0;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 600px) {
+    padding: 28px $paddingHorizontalSectionMobile;
+  }
+}

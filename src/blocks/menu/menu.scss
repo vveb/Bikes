@@ -1,0 +1,4 @@
+.menu {
+  @include flex(row, start, center);
+  height: 100%;
+}

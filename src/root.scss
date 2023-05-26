@@ -43,10 +43,14 @@ $paddingTitleToElementMobile: 40px;
 %sectionTitle {
   @include fontInter;
   font-weight: $bold;
-  font-size: calc(32px  + (23 * 1.4) * ((100vw - 320px) / 1440));
-  line-height: calc(40px  + (20 * 1.4) * ((100vw - 320px) / 1440));
+  font-size: calc(32px + 23 * (100vw / 1440));
+  line-height: calc(40px  + 20 * (100vw / 1440));
   letter-spacing: -0.5px;
   color: $titleWhiteTheme;
+  @media screen and (max-width: 320px) {
+    font-size: calc(32px  + (23 * 1.4) * ((100vw - 320px) / 1440));
+    line-height: calc(40px  + (20 * 1.4) * ((100vw - 320px) / 1440));
+  }
   &_dark {
     color: $titleDarkTheme;
   }
@@ -55,10 +59,14 @@ $paddingTitleToElementMobile: 40px;
 %quoteText {
   @include fontInter;
   font-weight: $semiBold;
-  font-size: calc(23px  + (11 * 1.4) * ((100vw - 320px) / 1440));
-  line-height: calc(29px  + (15 * 1.4) * ((100vw - 320px) / 1440));
+  font-size: calc(23px  + 11 * (100vw / 1440));
+  line-height: calc(29px  + 15 * (100vw / 1440));
   letter-spacing: -0.5px;
   color: $titleWhiteTheme;
+  @media screen and (max-width: 320px) {
+    font-size: calc(23px  + (11 * 1.4) * ((100vw - 320px) / 1440));
+    line-height: calc(29px  + (15 * 1.4) * ((100vw - 320px) / 1440));
+  }
   &_dark {
     color: $titleDarkTheme;
   }
@@ -67,9 +75,13 @@ $paddingTitleToElementMobile: 40px;
 %quoteAuthor {
   @include fontInter;
   font-weight: $medium;
-  font-size: calc(14px  + (6 * 1.4) * ((100vw - 320px) / 1440));
-  line-height: calc(22px  + (10 * 1.4) * ((100vw - 320px) / 1440));
+  font-size: calc(14px  + 6 * (100vw / 1440));
+  line-height: calc(22px  + 10 * (100vw / 1440));
   color: $titleWhiteTheme;
+  @media screen and (max-width: 320px) {
+    font-size: calc(14px  + (6 * 1.4) * ((100vw - 320px) / 1440));
+    line-height: calc(22px  + (10 * 1.4) * ((100vw - 320px) / 1440));
+  }
   &_dark {
     color: $titleDarkTheme;
   }
@@ -78,10 +90,14 @@ $paddingTitleToElementMobile: 40px;
 %quoteCaptionText {
   @include fontInter;
   font-weight: $regular;
-  font-size: calc(10px  + (4 * 1.4) * ((100vw - 320px) / 1440));
-  line-height: calc(16px  + (12 * 1.4) * ((100vw - 320px) / 1440));
+  font-size: calc(10px  + 4 * (100vw / 1440));
+  line-height: calc(16px  + 12 * (100vw / 1440));
   color: $textWhiteTheme;
   opacity: .7;
+  @media screen and (max-width: 320px) {
+    font-size: calc(10px  + (4 * 1.4) * ((100vw - 320px) / 1440));
+    line-height: calc(16px  + (12 * 1.4) * ((100vw - 320px) / 1440));
+  }
   &_dark {
     color: $textDarkTheme;
   }
@@ -90,10 +106,14 @@ $paddingTitleToElementMobile: 40px;
 %mainText {
   @include fontInter;
   font-weight: $regular;
-  font-size: calc(12px  + (6 * 1.4) * ((100vw - 320px) / 1440));
-  line-height: calc(18px  + (10 * 1.4) * ((100vw - 320px) / 1440));
+  font-size: calc(12px  + 6 * (100vw / 1440));
+  line-height: calc(18px  + 10 * (100vw / 1440));
   color: $textWhiteTheme;
   opacity: .7;
+  @media screen and (max-width: 320px) {
+    font-size: calc(12px  + (6 * 1.4) * ((100vw - 320px) / 1440));
+    line-height: calc(18px  + (10 * 1.4) * ((100vw - 320px) / 1440));
+  }
   &_dark {
     color: $textDarkTheme;
   }
@@ -102,9 +122,13 @@ $paddingTitleToElementMobile: 40px;
 %modelBikeText {
   @include fontInter;
   font-weight: $semiBold;
-  font-size: calc(14px  + (4 * 1.4) * ((100vw - 320px) / 1440));
-  line-height: calc(18px  + (4 * 1.4) * ((100vw - 320px) / 1440));
+  font-size: calc(14px  + 4 * (100vw / 1440));
+  line-height: calc(18px  + 4 * (100vw / 1440));
   color: $textWhiteTheme;
+  @media screen and (max-width: 320px) {
+    font-size: calc(14px  + (4 * 1.4) * ((100vw - 320px) / 1440));
+    line-height: calc(18px  + (4 * 1.4) * ((100vw - 320px) / 1440));
+  }
   &_dark {
     color: $textDarkTheme;
   }
