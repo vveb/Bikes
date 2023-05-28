@@ -5,6 +5,11 @@
   width: 22px;
   border: 0;
   @extend %zeroSpaces;
+  display: none;
+
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
 }
 
 .menu__button-icon {
@@ -19,7 +24,6 @@
 
     &.menu__button-icon_active {
       background-color: transparent;
-      // transform: translateX(-20px);
 
       &::before {
         transform: rotate(45deg) translate(-3px, -1px);
