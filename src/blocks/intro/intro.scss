@@ -1,0 +1,12 @@
+.intro {
+  padding: 20px 0 0 $paddingHorizontalSection;
+  width: 100%;
+  @extend %limitedWidthSection;
+  background-image: url('../images/intro__background-image.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-clip: content-box;
+  background-size: auto 836px;
+  position: relative;
+  min-height: 856px;
+}

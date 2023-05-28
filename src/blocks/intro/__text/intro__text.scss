@@ -1,0 +1,6 @@
+.intro__text {
+  @extend %mainText;
+  max-width: 460px;
+  padding-top: $paddingTitleToText;
+  box-sizing: border-box;
+}

@@ -1,0 +1,19 @@
+.intro__bike-text {
+  @extend %zeroSpaces;
+  font-size: 18px;
+  font-weight: $regular;
+  line-height: 18px;
+  color: $titleWhiteTheme;
+  padding-top: 167px;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 132px;
+    height: 2px;
+    background-color: #d7d4d4;
+    margin-left: 30px;
+  }
+}

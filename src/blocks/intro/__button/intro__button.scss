@@ -1,0 +1,9 @@
+.intro__button {
+  padding: 16px 10px;
+  border: 0;
+  border-radius: 4px;
+  background: $buttonColor;
+  margin-top: 50px;
+  min-width: 180px;
+  @extend %buttonText;
+}
