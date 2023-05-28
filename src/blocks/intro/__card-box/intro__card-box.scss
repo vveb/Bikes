@@ -3,7 +3,7 @@
   height: 410px;
   max-width: calc(100vw - 630px);
   position: absolute;
-  left: calc(100vw - 810px);
+  right: 0;
   bottom: 79px;
   box-sizing: border-box;
   
@@ -13,6 +13,7 @@
 
   @media screen and (max-width: 1439px) {
     left: calc(100vw - 630px);
+    max-width: 610px;
   }
 
   @media screen and (max-width: 1023px) {
@@ -27,6 +28,8 @@
   @media screen and (max-width: 768px) {
     left: calc(100vw - 480px);
     max-width: calc(100vw - 430px);
+    max-height: 300px;
+    bottom: 9px;
   }
 
   @media screen and (max-width: 730px) {
