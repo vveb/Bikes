@@ -1,6 +1,6 @@
 .main {
   width: 100%;
-  height: 10000px;
+  // height: 10000px;
   @include flex(column, start, center);
   @extend %limitedWidthSection;
 }

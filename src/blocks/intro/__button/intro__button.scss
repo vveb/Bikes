@@ -6,4 +6,9 @@
   margin-top: 50px;
   min-width: 180px;
   @extend %buttonText;
+
+  @media screen and (max-width: 730px) {
+    padding: 14px 100px;
+    margin-top: 40px;
+  }
 }
