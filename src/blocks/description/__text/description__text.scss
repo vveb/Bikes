@@ -1,0 +1,11 @@
+.description__text {
+  @extend %zeroSpaces;
+  @extend %mainText;
+  padding-top: $paddingTitleToText;
+  max-width: 460px;
+  max-height: 112px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
+}

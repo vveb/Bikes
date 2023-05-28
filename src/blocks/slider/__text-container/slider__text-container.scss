@@ -1,0 +1,10 @@
+.slider__text-container {
+  list-style-type: none;
+  @extend %zeroSpaces;
+  @include flex(row, start, start);
+  width: 100%;
+  min-width: 100vw;
+  position: relative;
+  left: 0;
+  transition: left 1s;
+}

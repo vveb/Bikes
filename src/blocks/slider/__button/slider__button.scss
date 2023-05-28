@@ -1,0 +1,17 @@
+.slider__button {
+  border: 0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  // background-clip: content-box;
+  background-color: #ebebeb;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity .3s;
+
+  &:hover {
+    opacity: .6;
+  }
+}

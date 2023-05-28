@@ -29,3 +29,19 @@
 @import "../blocks/merckx/__quote-text/merckx__quote-text.scss";
 @import "../blocks/merckx/__author/merckx__author.scss";
 @import "../blocks/merckx/__caption/merckx__caption.scss";
+
+@import "../blocks/description/description.scss";
+@import "../blocks/description/__title/description__title.scss";
+@import "../blocks/description/__text/description__text.scss";
+@import "../blocks/description/__image-box/description__image-box.scss";
+@import "../blocks/description/__image/description__image.scss";
+
+@import "../blocks/slider/slider.scss";
+@import "../blocks/slider/__text-container/slider__text-container.scss";
+@import "../blocks/slider/__text-item/slider__text-item.scss";
+@import "../blocks/slider/__image-container/slider__image-container.scss";
+@import "../blocks/slider/__actions/slider__actions.scss";
+@import "../blocks/slider/__button/slider__button.scss";
+@import "../blocks/slider/__button/_disabled/button_disabled.scss";
+@import "../blocks/slider/__button/_type/slider__button_type_prev.scss";
+@import "../blocks/slider/__button/_type/slider__button_type_next.scss";

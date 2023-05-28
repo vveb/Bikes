@@ -1,0 +1,7 @@
+.slider__actions {
+  margin-top: 50px;
+  @include flex(row, start, center);
+  max-width: 120px;
+  box-sizing: border-box;
+  column-gap: 20px;
+}
