@@ -2,4 +2,10 @@
   background-image: url('../images/description-slider/arrow-prev.svg');
   background-position: 20px 17px;
   padding: 17px 23px 17px 20px;
+
+  @media screen and (max-width: 425px) {
+    background-image: url('../images/description-slider/arrow-prev-small.svg');
+    padding: 7px 10px 7px 9px;
+    background-position: 7px center;
+  }
 }

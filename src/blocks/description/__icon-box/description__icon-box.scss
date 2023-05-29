@@ -12,4 +12,16 @@
   background-image: url('../images/description-slider/icon-background.svg');
   background-color: transparent;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 1023px) {
+    background-image: url('../images/description-slider/icon-background-small.svg');
+    width: 70px;
+    height: 28px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+  }
+
+  @media screen and (max-width: 425px) {
+    bottom: 14px;
+  }
 }

@@ -3,8 +3,13 @@
   height: 100%;
   background-repeat: no-repeat;
   background-position: right bottom;
-  transition: skew(25deg, 0);
   transition: all .5s ease;
+  box-sizing: border-box;
+  background-size: contain;
+
+  @media screen and (max-width: 1023px) {
+    width: 35px;
+  }
 }
 
 @keyframes switch-animation {
@@ -20,5 +25,5 @@
 }
 
 .switch-icon {
-  animation: switch-animation .5s ease 0s;
+  animation: switch-animation .5s ease-in-out 0s;
 }

@@ -8,4 +8,12 @@
   width: 100%;
   max-width: 100vw;
   transition: left 1s;
+
+  @media screen and (max-width: 1023px) {
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 425px) {
+    order: 1;
+  }
 }
