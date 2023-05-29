@@ -35,6 +35,11 @@
 @import "../blocks/description/__text/description__text.scss";
 @import "../blocks/description/__image-box/description__image-box.scss";
 @import "../blocks/description/__image/description__image.scss";
+@import "../blocks/description/__icon-box/description__icon-box.scss";
+@import "../blocks/description/__icon/description__icon.scss";
+@import "../blocks/description/__icon/_type/description__icon_type_highway.scss";
+@import "../blocks/description/__icon/_type/description__icon_type_gravel.scss";
+@import "../blocks/description/__icon/_type/description__icon_type_tt.scss";
 
 @import "../blocks/slider/slider.scss";
 @import "../blocks/slider/__text-container/slider__text-container.scss";

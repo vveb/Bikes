@@ -1,0 +1,15 @@
+.description__icon-box {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  bottom: 116px;
+  border: 0;
+  padding-bottom: 12px;
+  padding-right: 34px;
+  box-sizing: border-box;
+  @include flex(row, end, end);
+  background-image: url('../images/description-slider/icon-background.svg');
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
