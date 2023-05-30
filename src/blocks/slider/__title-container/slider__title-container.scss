@@ -1,0 +1,14 @@
+.slider__title-container {
+  min-width: 100vw;
+  list-style-type: none;
+  padding-left: 0;
+  @include flex(row, start, start);
+  margin: 0;
+  left: 0;
+  position: relative;
+  transition: left 1s ease;
+
+  @media screen and (max-width: 425px) {
+    order: 0;
+  }
+}

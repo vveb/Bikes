@@ -8,6 +8,11 @@
   @extend %buttonText;
 
   @media screen and (max-width: 730px) {
+    padding: 14px 30px;
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 600px) {
     padding: 14px 100px;
     margin-top: 40px;
   }

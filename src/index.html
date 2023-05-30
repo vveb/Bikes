@@ -44,6 +44,42 @@
         <p class="merckx__caption">Велогонщик</p>
       </div>
     </section>
+    <section class="description">
+      <div class="slider">
+        <ul class="slider__title-container">
+          <li class="slider__title-item"><h2 class="description__title">Шоссе</h2></li>
+          <li class="slider__title-item"><h2 class="description__title">Грэвел</h2></li>
+          <li class="slider__title-item"><h2 class="description__title">ТТ</h2></li>
+        </ul>
+        <ul class="slider__text-container">
+          <li class="slider__text-item">
+            <p class="description__text">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: 
+              будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
+          </li>
+          <li class="slider__text-item">
+            <p class="description__text">Грэвел похож на шоссейный велосипед, но конструкция рамы немного отличается, 
+              и на нём стоят более широкие покрышки, всё для того чтобы проехать по лёгкому бездорожью.</p>
+          </li>
+          <li class="slider__text-item">
+            <p class="description__text">ТТ — это велосипед для триатлона или раздельного старта, гооняют на таком
+              велике только по равнинному асфальту, велик очень быстрые и аэродинамичный.</p>
+          </li>
+        </ul>
+        <ul class="slider__image-container">
+          <li><img class="description__image" src="<%=require('./images/description-slider/image-1.png')%>" alt=""></li>
+          <li><img class="description__image" src="<%=require('./images/description-slider/image-2.png')%>" alt=""></li>
+          <li><img class="description__image" src="<%=require('./images/description-slider/image-3.png')%>" alt=""></li>
+          <li> <img class="description__image" src="<%=require('./images/description-slider/image-4.png')%>" alt=""></li>
+        </ul>
+        <div class="description__icon-box">
+          <div class="description__icon description__icon_type_highway"></div>
+        </div>
+        <div class="slider__actions">
+          <button class="slider__button slider__button_type_prev" type="button" name="prev"></button>
+          <button class="slider__button slider__button_type_next" type="button" name="next"></button>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>

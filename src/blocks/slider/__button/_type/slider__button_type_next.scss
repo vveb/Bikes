@@ -1,0 +1,11 @@
+.slider__button_type_next {
+  background-image: url('../images/description-slider/arrow-next.svg');
+  background-position: 23px 17px;
+  padding: 17px 20px 17px 23px;
+
+  @media screen and (max-width: 425px) {
+    background-image: url('../images/description-slider/arrow-next-small.svg');
+    padding: 7px 9px 7px 10px;
+    background-position: 10px center;
+  }
+}

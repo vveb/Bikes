@@ -33,7 +33,15 @@
   }
 
   @media screen and (max-width: 730px) {
-    height: 180px;
+    max-height: 180px;
+    width: 302px;
+    top: 310px;
+    left: 300px;
+    max-width: 234px;
+  }
+
+  @media screen and (max-width: 600px) {
+    max-height: 180px;
     width: 302px;
     top: 310px;
     left: 18px;

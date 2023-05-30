@@ -1,0 +1,6 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  @include flex(column, start, start);
+}

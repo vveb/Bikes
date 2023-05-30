@@ -10,8 +10,13 @@
   position: relative;
   min-height: 856px;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1439px) {
     background-size: 50% 100%;
+    padding: 20px 0 0 $paddingHorizontalSectionSmallDesktop;
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding: 20px 0 0 $paddingHorizontalSectionTablet;
   }
 
   @media screen and (max-width: 768px) {
@@ -21,9 +26,15 @@
   }
 
   @media screen and (max-width: 730px) {
-    padding: 40px $paddingHorizontalSectionMobile 0 $paddingHorizontalSectionMobile;
+    padding: 40px $paddingHorizontalSectionLargeMobile 0 $paddingHorizontalSectionLargeMobile;
+    background-size: auto 400px;
+    background-position: 400px 140px;
+    @include flex(column, center, start)
+  }
+
+  @media screen and (max-width: 600px) {
     background-size: auto 348px;
     background-position: 48px 160px;
-    @include flex(column, center, start)
+    padding: 40px 0 0 $paddingHorizontalSectionMobile;
   }
 }
