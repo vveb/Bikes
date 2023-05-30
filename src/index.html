@@ -80,6 +80,42 @@
         </div>
       </div>
     </section>
+    <section class="bikes">
+      <div class="bikes__header">
+        <h2 class="bikes__title">Велосипеды</h2>
+        <fieldset class="bikes__radio-box">
+          <label class="bikes__radio-label" for="higway">Шоссе</label>
+          <input class="bikes__radio-button" type="radio" name="choice" id="highway" value="highway">
+          <label class="bikes__radio-label" for="gravel">Грэвел</label>
+          <input class="bikes__radio-button" type="radio" name="choice" id="gravel" value="gravel">
+          <label class="bikes__radio-label" for="tt">ТТ</label>
+          <input class="bikes__radio-button" type="radio" name="choice" id="tt" value="tt">
+        </fieldset>
+      </div>
+      <div class="cards-container cards-container_type_highway">
+        <div class="card">
+          <figure class="card__image-box">
+            <img class="card__image" src="<%=require('./images/bikes/higway/Cervelo-Caledonia-5.png')%>" alt="Фото велосипеда">
+            <figcaption class="card__caption card__caption_type_inside">Cervelo Caledonia-5</figcaption>
+          </figure>
+          <p class="card__caption card__caption_type_outside">Cervelo Caledonia-5</p>
+        </div>
+        <div class="card">
+          <figure class="card__image-box">
+            <img class="card__image" src="<%=require('./images/bikes/higway/Cannondale-Systemsix-Himod.png')%>" alt="Фото велосипеда">
+            <figcaption class="card__caption card__caption_type_inside">Cannondale Systemsix Himod</figcaption>
+          </figure>
+          <p class="card__caption card__caption_type_outside">Cannondale Systemsix Himod</p>
+        </div>
+        <div class="card">
+          <figure class="card__image-box">
+            <img class="card__image" src="<%=require('./images/bikes/higway/Trek-Domane-SL-7.png')%>" alt="Фото велосипеда">
+            <figcaption class="card__caption card__caption_type_inside">Trek Domane SL-7</figcaption>
+          </figure>
+          <p class="card__caption card__caption_type_outside">Trek Domane SL-7</p>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>

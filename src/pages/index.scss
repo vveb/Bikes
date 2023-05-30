@@ -52,3 +52,15 @@
 @import "../blocks/slider/__button/_disabled/button_disabled.scss";
 @import "../blocks/slider/__button/_type/slider__button_type_prev.scss";
 @import "../blocks/slider/__button/_type/slider__button_type_next.scss";
+
+@import "../blocks/bikes/bikes.scss";
+@import "../blocks/bikes/__header/bikes__header.scss";
+@import "../blocks/bikes/__title/bikes__title.scss";
+
+@import "../blocks/cards-container/cards-container.scss";
+@import "../blocks/card/card.scss";
+@import "../blocks/card/__image-box/card__image-box.scss";
+@import "../blocks/card/__image/card__image.scss";
+@import "../blocks/card/__caption/card__caption.scss";
+@import "../blocks/card/__caption/_type/card__caption_type_inside.scss";
+@import "../blocks/card/__caption/_type/card__caption_type_outside.scss";

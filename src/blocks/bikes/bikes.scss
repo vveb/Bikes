@@ -1,0 +1,14 @@
+.bikes {
+  width: 100%;
+  padding: 60px $paddingHorizontalSection;
+  @include flex(column, start, start);
+  box-sizing: border-box;
+
+  @media screen and (max-width: 1439px) {
+    padding: 60px $paddingHorizontalSectionSmallDesktop;
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding: 60px $paddingHorizontalSectionTablet;
+  }
+}

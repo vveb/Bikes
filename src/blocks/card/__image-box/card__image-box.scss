@@ -1,0 +1,10 @@
+.card__image-box {
+  @extend %zeroSpaces;
+  @include flex(column, center, center);
+  box-sizing: border-box;
+  box-shadow: 0 20px 140px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  // max-width: 380px;
+}

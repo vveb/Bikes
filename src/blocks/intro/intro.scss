@@ -8,7 +8,8 @@
   background-clip: content-box;
   background-size: auto 836px;
   position: relative;
-  min-height: 856px;
+  max-height: 856px;
+  aspect-ratio: 856 / 610;
 
   @media screen and (max-width: 1439px) {
     background-size: 50% 100%;
@@ -20,19 +21,20 @@
   }
 
   @media screen and (max-width: 768px) {
-    background-size: 60% 100%;
+    background-size: auto 100%;
     padding-left: 60px;
-    min-height: 556px;
+    aspect-ratio: 348 / 254;
+    background-position: top right;
   }
 
   @media screen and (max-width: 730px) {
     padding: 40px $paddingHorizontalSectionLargeMobile 0 $paddingHorizontalSectionLargeMobile;
-    background-size: auto 400px;
-    background-position: 400px 140px;
+    background-size: auto 100%;
+    background-position: 300px 0;
     @include flex(column, center, start)
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 425px) {
     background-size: auto 348px;
     background-position: 48px 160px;
     padding: 40px 0 0 $paddingHorizontalSectionMobile;

@@ -1,0 +1,7 @@
+.card__caption_type_inside {
+  display: none;
+
+  @media screen and (max-width: 450px) {
+    display: block;
+  }
+}
