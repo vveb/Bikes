@@ -18,6 +18,7 @@
   }
 
   @media screen and (max-width: 425px) {
+    padding-top: $paddingTitleToElementMobile;
     max-width: 284px;
     order: 2;
   }

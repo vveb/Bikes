@@ -9,9 +9,13 @@
   @media screen and (max-width: 425px) {
     position: absolute;
     right: 0px;
-    top: 5px;
+    top: 1%;
     margin-top: 0;
     max-width: 58px;
     column-gap: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    box-sizing: content-box;
+    background-color: $backgroundWhiteTheme;
   }
 }

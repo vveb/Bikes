@@ -1,5 +1,6 @@
 const nextButton = document.querySelector('.slider__button_type_next');
 const prevButton = document.querySelector('.slider__button_type_prev');
+const sliderTitleContainer = document.querySelector('.slider__title-container');
 const sliderTextContainer = document.querySelector('.slider__text-container');
 const sliderImageContainer = document.querySelector('.slider__image-container');
 const descriptionImageItem = sliderImageContainer.querySelector('.description__image');
@@ -18,6 +19,7 @@ function showNextSlide() {
   changeIcon(offsetText - 100, offsetText);
   offsetImage = offsetImage + descriptionImageItem.clientWidth;
   sliderTextContainer.style.left = -offsetText + 'vw';
+  sliderTitleContainer.style.left = -offsetText + 'vw';
   sliderImageContainer.style.left = -offsetImage + 'px';
   toggleButtonState();
   animateIcon();
@@ -28,6 +30,7 @@ function showPreviousSlide() {
   changeIcon(offsetText + 100, offsetText);
   offsetImage = offsetImage - descriptionImageItem.clientWidth;
   sliderTextContainer.style.left = -offsetText + 'vw';
+  sliderTitleContainer.style.left = -offsetText + 'vw';
   sliderImageContainer.style.left = -offsetImage + 'px';
   toggleButtonState();
   animateIcon();

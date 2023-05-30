@@ -17,9 +17,15 @@
   }
 
   @media screen and (max-width: 425px) {
-    max-width: 284px;
-    height: 175px;
-    padding-right: 10px;
     box-sizing: content-box;
+    max-width: 389px;
+    max-height: 240px;
+    padding-right: 10px;
+  }
+
+  @media screen and (max-width: 320px) {
+    max-width: 284px;
+    max-height: 175px;
+    padding-right: 10px;
   }
 }
