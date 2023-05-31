@@ -1,0 +1,20 @@
+.select-wrapper {
+  display: none;
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    &::after {
+      content: '';
+      width: 10px;
+      height: 5px;
+      background-image: url('../images/select-arrow.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 12px;
+      top: 13px;
+      pointer-events: none;
+    }
+  }
+}

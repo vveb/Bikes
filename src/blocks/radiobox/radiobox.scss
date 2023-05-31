@@ -3,4 +3,8 @@
   @extend %zeroSpaces;
   @include flex(row, start, start);
   column-gap: 40px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }

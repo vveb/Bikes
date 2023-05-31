@@ -29,28 +29,34 @@ const bikeTexts = {
 const radioButtons = document.querySelectorAll('.radiobox__button_hidden');
 const cardImages = document.querySelectorAll('.card__image');
 const cardCaptions = document.querySelectorAll('.card__caption');
+const cardSelector = document.querySelector('.selector');
 let choice = 'highway';
-radioButtons.forEach((button) => {
-  button.addEventListener('click', (evt) => {
-    if (choice === evt.target.value) {
-      return;
+
+function changeCards(evt) {
+  if (choice === evt.target.value) {
+    return;
+  }
+  choice = evt.target.value;
+  cardImages.forEach((cardImage) => {
+    if (cardImage.name === choice) {
+      cardImage.classList.remove('card__image_hidden');
+    } else {
+      cardImage.classList.add('card__image_hidden');
     }
-    choice = evt.target.value;
-    cardImages.forEach((cardImage) => {
-      if (cardImage.name === choice) {
-        cardImage.classList.remove('card__image_hidden');
-      } else {
-        cardImage.classList.add('card__image_hidden');
-      }
-    })
-    cardCaptions.forEach((cardCaption) => {
-      cardCaption.classList.add('switch-caption');
-      setTimeout(() => {
-        cardCaption.textContent = bikeTexts[choice][cardCaption.ariaLabel];
-      }, 250);
-      setTimeout(() => {
-        cardCaption.classList.remove('switch-caption');
-      }, 500);
-    })
   })
+  cardCaptions.forEach((cardCaption) => {
+    cardCaption.classList.add('switch-caption');
+    setTimeout(() => {
+      cardCaption.textContent = bikeTexts[choice][cardCaption.ariaLabel];
+    }, 250);
+    setTimeout(() => {
+      cardCaption.classList.remove('switch-caption');
+    }, 500);
+  })
+}
+
+radioButtons.forEach((button) => {
+  button.addEventListener('click', (evt) => changeCards(evt));
 })
+
+cardSelector.addEventListener('change', (evt) => changeCards(evt));
