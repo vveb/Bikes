@@ -1,3 +1,19 @@
 .card__caption {
   @extend %modelBikeText;
 }
+
+@keyframes switch-caption-animation {
+  from {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.switch-caption {
+  animation: switch-caption-animation .5s ease-in-out;
+}

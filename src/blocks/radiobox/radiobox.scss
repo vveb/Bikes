@@ -1,0 +1,6 @@
+.radiobox {
+  border: 0;
+  @extend %zeroSpaces;
+  @include flex(row, start, start);
+  column-gap: 40px;
+}

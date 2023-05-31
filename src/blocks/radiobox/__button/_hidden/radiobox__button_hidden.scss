@@ -1,0 +1,20 @@
+.radiobox__button_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(0 0 0 0);
+
+  &:hover + .radiobox__button {
+    opacity: .6;
+  }
+
+  &:checked + .radiobox__button {
+    font-weight: $semiBold;
+    opacity: 1;
+  }
+
+  &:hover:checked + .radiobox__button {
+    opacity: .75;
+  }
+}

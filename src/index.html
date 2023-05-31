@@ -83,36 +83,48 @@
     <section class="bikes">
       <div class="bikes__header">
         <h2 class="bikes__title">Велосипеды</h2>
-        <fieldset class="bikes__radio-box">
-          <label class="bikes__radio-label" for="higway">Шоссе</label>
-          <input class="bikes__radio-button" type="radio" name="choice" id="highway" value="highway">
-          <label class="bikes__radio-label" for="gravel">Грэвел</label>
-          <input class="bikes__radio-button" type="radio" name="choice" id="gravel" value="gravel">
-          <label class="bikes__radio-label" for="tt">ТТ</label>
-          <input class="bikes__radio-button" type="radio" name="choice" id="tt" value="tt">
+        <fieldset class="radiobox">
+          <label class="radiobox__label" for="highway">
+            <input class="radiobox__button radiobox__button_hidden" type="radio" name="choice" id="highway" value="highway" checked>
+            <span class="radiobox__button">Шоссе</span>
+          </label>
+          <label class="radiobox__label" for="gravel">
+            <input class="radiobox__button radiobox__button_hidden" type="radio" name="choice" id="gravel" value="gravel">
+            <span class="radiobox__button">Грэвел</span>
+          </label>
+          <label class="radiobox__label" for="tt">
+            <input class="radiobox__button radiobox__button_hidden" type="radio" name="choice" id="tt" value="tt">
+            <span class="radiobox__button">ТТ</span>
+          </label>
         </fieldset>
       </div>
-      <div class="cards-container cards-container_type_highway">
+      <div class="cards-container">
         <div class="card">
           <figure class="card__image-box">
-            <img class="card__image" src="<%=require('./images/bikes/higway/Cervelo-Caledonia-5.png')%>" alt="Фото велосипеда">
-            <figcaption class="card__caption card__caption_type_inside">Cervelo Caledonia-5</figcaption>
+            <img class="card__image" name="highway" src="<%=require('./images/bikes/higway/Cervelo-Caledonia-5.png')%>" alt="Фото велосипеда">
+            <img class="card__image card__image_hidden" name="gravel" src="<%=require('./images/bikes/gravel/Cervelo-Aspero-GRX-810.png')%>" alt="Фото велосипеда">
+            <img class="card__image card__image_hidden" name="tt" src="<%=require('./images/bikes/tt/Specialized-S-Works-Shiv.png')%>" alt="Фото велосипеда">
+            <figcaption class="card__caption card__caption_type_inside" aria-label="left">Cervelo Caledonia-5</figcaption>
           </figure>
-          <p class="card__caption card__caption_type_outside">Cervelo Caledonia-5</p>
+          <p class="card__caption card__caption_type_outside" aria-label="left">Cervelo Caledonia-5</p>
         </div>
         <div class="card">
           <figure class="card__image-box">
-            <img class="card__image" src="<%=require('./images/bikes/higway/Cannondale-Systemsix-Himod.png')%>" alt="Фото велосипеда">
-            <figcaption class="card__caption card__caption_type_inside">Cannondale Systemsix Himod</figcaption>
+            <img class="card__image" name="highway" src="<%=require('./images/bikes/higway/Cannondale-Systemsix-Himod.png')%>" alt="Фото велосипеда">
+            <img class="card__image card__image_hidden" name="gravel" src="<%=require('./images/bikes/gravel/Specialized-S-Works-Diverge.png')%>" alt="Фото велосипеда">
+            <img class="card__image card__image_hidden" name="tt" src="<%=require('./images/bikes/tt/BMC-Timemachine-01-ONE.png')%>" alt="Фото велосипеда">
+            <figcaption class="card__caption card__caption_type_inside" aria-label="center">Cannondale Systemsix Himod</figcaption>
           </figure>
-          <p class="card__caption card__caption_type_outside">Cannondale Systemsix Himod</p>
+          <p class="card__caption card__caption_type_outside" aria-label="center">Cannondale Systemsix Himod</p>
         </div>
         <div class="card">
           <figure class="card__image-box">
-            <img class="card__image" src="<%=require('./images/bikes/higway/Trek-Domane-SL-7.png')%>" alt="Фото велосипеда">
-            <figcaption class="card__caption card__caption_type_inside">Trek Domane SL-7</figcaption>
+            <img class="card__image" name="highway" src="<%=require('./images/bikes/higway/Trek-Domane-SL-7.png')%>" alt="Фото велосипеда">
+            <img class="card__image card__image_hidden" name="gravel" src="<%=require('./images/bikes/gravel/Cannondale-Topstone-Lefty-3.png')%>" alt="Фото велосипеда">
+            <img class="card__image card__image_hidden" name="tt" src="<%=require('./images/bikes/tt/Cervelo-P-Series.png')%>" alt="Фото велосипеда">
+            <figcaption class="card__caption card__caption_type_inside" aria-label="right">Trek Domane SL-7</figcaption>
           </figure>
-          <p class="card__caption card__caption_type_outside">Trek Domane SL-7</p>
+          <p class="card__caption card__caption_type_outside" aria-label="right">Trek Domane SL-7</p>
         </div>
       </div>
     </section>
