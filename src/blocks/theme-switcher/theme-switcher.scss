@@ -1,0 +1,4 @@
+.theme-switcher {
+  @include flex(row, space-between, center);
+  column-gap: 22px;
+}

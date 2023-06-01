@@ -16,7 +16,7 @@
         <li class="menu__item"><a class="menu__link">Велосипеды</a></li>
         <li class="menu__item"><a class="menu__link">Тренировки</a></li>
       </ul>
-      <button type="button" class="menu__button">
+      <button type="menu" class="menu__button">
         <div class="menu__button-icon"></div>
       </button>
     </nav>
@@ -162,5 +162,23 @@
       <img class="workout__image" src="<%=require('./images/workout.png')%>">
     </section>
   </main>
+  <footer class="footer">
+    <h3 class="footer__title">Подпишитесь на рассылку —</h3>
+    <form class="form" name="subscribe-form">
+      <input class="form__input" type="email" placeholder="Ваш e-mail" name="subscribe-form-input">
+      <button class="form__submit-button form__submit-button_hidden" type="submit" name="subscribe-form-submit-button">ok</button>
+    </form>
+    <div class="footer__bottom-box">
+      <p class="footer__copyright">&#169; Road Club 2021</p>
+      <div class="theme-switcher">
+        <div class="theme-switcher__icon theme-switcher__icon_type_light"></div>
+        <button class="theme-switcher__button" type="button">
+          <div class="theme-switcher__circle"></div>
+        </button>
+        <div class="theme-switcher__icon theme-switcher__icon_type_dark"></div>
+      </div>
+      <div class="footer__logo"></div>
+    </div>
+  </footer>
 </body>
 </html>

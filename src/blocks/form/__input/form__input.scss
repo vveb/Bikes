@@ -1,0 +1,20 @@
+.form__input {
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+  line-height: 28px;
+
+  &:focus {
+    outline: 0;
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+
+  &::placeholder {
+    opacity: .7;
+    font-size: 13px;
+    font-weight: $medium;
+    color: $titleWhiteTheme;
+  }
+}

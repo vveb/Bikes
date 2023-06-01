@@ -1,0 +1,6 @@
+.footer {
+  @extend %limitedWidthSection;
+  padding: 80px $paddingHorizontalSection 60px;
+  background-color: $footerBackgroundWhiteTheme;
+  width: 100%;
+}

@@ -1,0 +1,4 @@
+.footer__bottom-box {
+  @include flex(row, space-between, baseline);
+  width: 100%;
+}

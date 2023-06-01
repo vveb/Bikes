@@ -4,6 +4,7 @@
 @import "../root.scss";
 
 @import "../blocks/page/page.scss";
+@import "../blocks/page/_dark/page_dark.scss";
 
 @import "../blocks/header/header.scss";
 
@@ -12,6 +13,13 @@
 @import "../blocks/menu/__item/menu__item.scss";
 @import "../blocks/menu/__button/menu__button.scss";
 @import "../blocks/menu/__button-icon/menu__button-icon.scss";
+
+@import "../blocks/theme-switcher/theme-switcher.scss";
+@import "../blocks/theme-switcher/__icon/theme-switcher__icon.scss";
+@import "../blocks/theme-switcher/__icon/_type/theme-switcher__icon_type_light.scss";
+@import "../blocks/theme-switcher/__icon/_type/theme-switcher__icon_type_dark.scss";
+@import "../blocks/theme-switcher/__button/theme-switcher__button.scss";
+@import "../blocks/theme-switcher/__circle/theme-switcher__circle.scss";
 
 @import '../blocks/main/main.scss';
 
@@ -84,3 +92,14 @@
 @import "../blocks/workout/__links/workout__links.scss";
 @import "../blocks/workout/__link/workout__link.scss";
 @import "../blocks/workout/__image/workout__image.scss";
+
+@import "../blocks/footer/footer.scss";
+@import "../blocks/footer/__title/footer__title.scss";
+@import "../blocks/footer/__bottom-box/footer__bottom-box.scss";
+@import "../blocks/footer/__copyright/footer__copyright.scss";
+@import "../blocks/footer/__logo/footer__logo.scss";
+
+@import "../blocks/form/form.scss";
+@import "../blocks/form/__input/form__input.scss";
+@import "../blocks/form/__submit-button/form__submit-button.scss";
+@import "../blocks/form/__submit-button/_hidden/form__submit-button_hidden.scss";
