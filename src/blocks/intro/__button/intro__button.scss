@@ -16,4 +16,8 @@
     padding: 14px 100px;
     margin-top: 40px;
   }
+
+  &:focus {
+    outline: 1px solid #2bd295;
+  }
 }

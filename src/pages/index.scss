@@ -11,6 +11,7 @@
 @import "../blocks/menu/__container/menu__container.scss";
 @import "../blocks/menu/__item/menu__item.scss";
 @import "../blocks/menu/__button/menu__button.scss";
+@import "../blocks/menu/__button-icon/menu__button-icon.scss";
 
 @import '../blocks/main/main.scss';
 
@@ -42,6 +43,7 @@
 @import "../blocks/description/__icon/_type/description__icon_type_tt.scss";
 
 @import "../blocks/slider/slider.scss";
+@import "../blocks/slider/_mobile/slider_mobile.scss";
 @import "../blocks/slider/__title-container/slider__title-container.scss";
 @import "../blocks/slider/__title-item/slider__title-item.scss";
 @import "../blocks/slider/__text-container/slider__text-container.scss";
@@ -58,12 +60,14 @@
 @import "../blocks/bikes/__title/bikes__title.scss";
 
 @import "../blocks/radiobox/radiobox.scss";
-@import "../blocks/radiobox/__label/radiobox__label.scss";
+@import "../blocks/radiobox/_mobile/radiobox_mobile.scss";
 @import "../blocks/radiobox/__button/radiobox__button.scss";
 @import "../blocks/radiobox/__button/_hidden/radiobox__button_hidden.scss";
+@import "../blocks/radiobox/__button/_mobile/radiobox__button_mobile.scss";
 
 @import "../blocks/select-wrapper/select-wrapper.scss";
 @import "../blocks/selector/selector.scss";
+@import "../blocks/selector/__option/selector__option.scss";
 
 @import "../blocks/cards-container/cards-container.scss";
 @import "../blocks/card/card.scss";

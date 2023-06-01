@@ -2,10 +2,15 @@
   border: 1px solid #e3e3e3;
   border-radius: 2px;
   background-color: transparent;
-  padding: 8px 12px;
+  padding: 7px 12px;
   width: 114px;
   font-size: 11px;
   line-height: 14px;
   font-weight: $semiBold;
   appearance: none;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: 1px solid #d5d5d5;
+  }
 }
