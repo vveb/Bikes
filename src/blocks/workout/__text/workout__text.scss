@@ -1,0 +1,13 @@
+.workout__text {
+  grid-area: text;
+  @extend %mainText;
+
+  @media screen and (max-width: 767px) {
+    width: 80%;
+    padding-top: $paddingTitleToElementMobile;
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 100%;
+  }
+}

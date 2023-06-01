@@ -1,0 +1,11 @@
+.workout__title {
+  grid-area: title;
+  @extend %sectionTitle;
+  padding-bottom: $paddingTitleToText;
+  box-sizing: border-box;
+  align-self: start;
+
+  @media screen and (max-width: 1023px) {
+    padding-bottom: $paddingTitleToElementMobile;
+  }
+}

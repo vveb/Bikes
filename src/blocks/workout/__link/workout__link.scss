@@ -1,0 +1,18 @@
+.workout__link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: $semiBold;
+  line-height: 28px;
+  color: $titleWhiteTheme;
+  opacity: 1;
+  transition: opacity .5s ease;
+
+  @media screen and (max-width: 425px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    opacity: .75;
+  }
+}
