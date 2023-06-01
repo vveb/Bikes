@@ -12,8 +12,12 @@
     margin-top: 40px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 425px) {
     padding: 14px 100px;
     margin-top: 40px;
+  }
+
+  &:focus {
+    outline: 1px solid #2bd295;
   }
 }

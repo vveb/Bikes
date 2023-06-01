@@ -1,20 +1,21 @@
-.description {
-  padding: 60px 0 60px $paddingHorizontalSection;
-  @extend %limitedWidthSection;
+.bikes {
+  width: 100%;
+  padding: 60px $paddingHorizontalSection;
   @include flex(column, start, start);
+  box-sizing: border-box;
 
   @media screen and (max-width: 1439px) {
-    padding-left: $paddingHorizontalSectionSmallDesktop;
-    padding-top: 40px;
+    padding: 60px $paddingHorizontalSectionSmallDesktop;
   }
 
   @media screen and (max-width: 1023px) {
-    padding-left: $paddingHorizontalSectionTablet;
-    padding-top: 0;
+    padding: 60px $paddingHorizontalSectionTablet;
   }
 
   @media screen and (max-width: 767px) {
-    padding-left: $paddingHorizontalSectionLargeMobile;
+    padding: 40px $paddingHorizontalSectionLargeMobile;
+    overflow: hidden;
+    position: relative;
   }
 
   @media screen and (max-width: 425px) {

@@ -1,0 +1,21 @@
+.card__image-box {
+  @extend %zeroSpaces;
+  @include flex(column, space-between, center);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-height: 380px;
+  background-color: $backgroundWhiteTheme;
+
+  &:hover {
+    filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.11));
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 15px;
+    min-height: 306px;
+  }
+}

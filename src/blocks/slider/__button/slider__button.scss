@@ -18,4 +18,8 @@
   &:hover {
     opacity: .6;
   }
+
+  &:focus {
+    outline: 1px solid #d9d9d9;
+  }
 }
