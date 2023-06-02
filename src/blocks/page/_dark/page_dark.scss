@@ -19,7 +19,9 @@
   .form__input,
   .form__input::placeholder,
   .form__submit-button,
-  .burger-popup__link
+  .burger-popup__link,
+  .selector,
+  .selector::after
    {
     color: $titleDarkTheme;
   }
@@ -92,5 +94,17 @@
 
   .burger-popup {
     background-color: $backgroundDarkTheme;
+  }
+
+  .selector__option {
+    color: #151515;
+  }
+
+  .select-wrapper {
+    @media screen and (max-width: 767px) {
+      &::after {
+        background-image: url('../images/select-arrow-white.svg');
+      }
+    }
   }
 }
