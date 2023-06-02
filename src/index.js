@@ -14,9 +14,13 @@ burgerMenuButton.addEventListener('click', () => {
   burgerPopup.classList.toggle('burger-popup_opened');
 });
 
-initSlider();
-initBikeSelector();
-initBikeSlider();
-initThemeSwitcher();
-initSubscribeForm();
-initSmoothScroll();
+function initApp() {
+  initSlider();
+  initBikeSelector();
+  initBikeSlider();
+  initThemeSwitcher();
+  initSubscribeForm();
+  initSmoothScroll();
+}
+
+initApp();
