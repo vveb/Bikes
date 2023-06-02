@@ -5,13 +5,16 @@ const subscribeFormButton = document.forms['subscribe-form']['subscribe-form-sub
 export default function initSubscribeForm() {
   subscribeFormInput.addEventListener('input', () => {
     subscribeFormButton.classList.remove('form__submit-button_hidden');
+    subscribeForm.classList.add('form_active');
     if (subscribeFormInput.value === '') {
       subscribeFormButton.classList.add('form__submit-button_hidden');
+      subscribeForm.classList.remove('form_active');
     }
   })
   subscribeForm.addEventListener('submit', (evt) => {
     evt.preventDefault();
     subscribeFormButton.classList.add('form__submit-button_hidden');
+    subscribeForm.classList.remove('form_active');
     subscribeFormInput.value = 'Круто!';
   })
 }

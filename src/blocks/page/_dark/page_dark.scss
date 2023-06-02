@@ -1,7 +1,111 @@
 .page_dark {
   background-color: $backgroundDarkTheme;
+
+  .header {
+    box-shadow: 0 2px 20px 0 rgb(69, 69, 69);
+  }
+
+  .menu__link,
+  .intro__title,
+  .intro__bike-text,
+  .merckx__quote-text,
+  .merckx__author,
+  .description__title,
+  .bikes__title,
+  .card__caption,
+  .workout__title,
+  .workout__link,
+  .footer__title,
+  .form__input,
+  .form__input::placeholder,
+  .form__submit-button,
+  .burger-popup__link,
+  .selector,
+  .selector::after
+   {
+    color: $titleDarkTheme;
+  }
+
+  .intro__text,
+  .merckx__caption,
+  .description__text,
+  .workout__text
+   {
+    color: $textDarkTheme;
+  }
+
+  .slider__actions {
+    @media screen and (max-width: 425px) {
+      background-color: $backgroundDarkTheme;
+    }
+  }
+
+  .slider__button {
+    background-color: #434343;
+  }
+
+  .slider__button_type_next::after {
+    background-image: url('../images/description-slider/arrow-next-white.svg');
+  }
+
+  .slider__button_type_prev::after {
+    background-image: url('../images/description-slider/arrow-prev-white.svg');
+  }
+
+  .radiobox__button_hidden.radiobox__button_input:checked + .radiobox__button {
+    color: $titleDarkTheme;
+  }
+
+  .radiobox__button {
+    color: $textDarkTheme;
+  }
   
-  >.footer {
-    background-color: $footerBackgroundDarkTheme
+  .footer {
+    background-color: $footerBackgroundDarkTheme;
+
+    &__copyright {
+      color: $copyrightTextDarkTheme;
+    }
+  }
+
+  .form {
+    border-color: rgba(125, 125, 125, .5);
+
+    &_active {
+      border-color: rgba(125, 125, 125, 1);
+    }
+  }
+
+  .form__input::placeholder {
+    color: $titleDarkTheme;
+  }
+
+  .theme-switcher__icon_type_dark {
+    background-image: url('../images/icon-dark-dark.svg');
+  }
+
+  .theme-switcher__icon_type_light {
+    background-image: url('../images/icon-light-dark.svg');
+  }
+
+  .menu__button-icon, .menu__button-icon::before, .menu__button-icon::after {
+    background-color: #fff;
+  }
+
+  .burger-popup {
+    background-color: $backgroundDarkTheme;
+  }
+
+  .selector__option,
+  .card__caption_type_inside {
+    color: #151515;
+  }
+
+  .select-wrapper {
+    @media screen and (max-width: 767px) {
+      &::after {
+        background-image: url('../images/select-arrow-white.svg');
+      }
+    }
   }
 }

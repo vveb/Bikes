@@ -14,7 +14,7 @@
 
   @media screen and (max-width: 1023px) {
     grid-template-columns: minmax(200px, 420px) 1fr;
-    padding: 120px $paddingHorizontalSectionTablet;
+    padding: 60px $paddingHorizontalSectionTablet;
   }
 
   @media screen and (max-width: 767px) {
@@ -25,7 +25,7 @@
 
   @media screen and (max-width: 425px) {
     grid-template-columns: 1fr;
-    padding: 80px $paddingHorizontalSectionMobile 40px;
+    padding: 80px $paddingHorizontalSectionMobile 80px;
 
     &::before {
       content: '';

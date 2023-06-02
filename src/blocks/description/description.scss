@@ -10,7 +10,7 @@
 
   @media screen and (max-width: 1023px) {
     padding-left: $paddingHorizontalSectionTablet;
-    padding-top: 0;
+    padding-top: 60px;
   }
 
   @media screen and (max-width: 767px) {
@@ -18,7 +18,7 @@
   }
 
   @media screen and (max-width: 425px) {
-    padding: 40px $paddingHorizontalSectionMobile;
+    padding: 0 $paddingHorizontalSectionMobile 80px;
 
     &::before {
       content: '';

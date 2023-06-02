@@ -1,0 +1,10 @@
+.menu__link {
+  text-decoration: none;
+  color: inherit;
+  opacity: 1;
+  transition: opacity .5s ease;
+
+  &:hover {
+    opacity: .75;
+  }
+}

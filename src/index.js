@@ -4,6 +4,7 @@ import initBikeSelector from './scripts/bike-selector.js';
 import initBikeSlider from './scripts/bike-slider.js';
 import initThemeSwitcher from './scripts/switch-theme.js';
 import initSubscribeForm from './scripts/form-subscribe.js';
+import initSmoothScroll from './scripts/smooth-scroll.js';
 
 const burgerMenuButton = document.querySelector('.menu__button');
 const burgerMenuIcon = burgerMenuButton.querySelector('.menu__button-icon')
@@ -18,3 +19,4 @@ initBikeSelector();
 initBikeSlider();
 initThemeSwitcher();
 initSubscribeForm();
+initSmoothScroll();

@@ -34,7 +34,7 @@
   }
 
   @media screen and (max-width: 425px) {
-    padding: 40px $paddingHorizontalSectionMobile 60px;
+    padding: 0 $paddingHorizontalSectionMobile 60px;
 
     &::before {
       content: '';
