@@ -1,0 +1,9 @@
+.footer__title {
+  @extend %footerTitle;
+  max-width: 230px;
+  padding-bottom: $paddingTitleToText;
+
+  @media screen and (max-width: 425px) {
+    padding-bottom: $paddingTitleToElementMobile;
+  }
+}
