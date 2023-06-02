@@ -1,0 +1,42 @@
+.intro {
+  padding: 20px 0 0 $paddingHorizontalSection;
+  width: 100%;
+  @extend %limitedWidthSection;
+  background-image: url('../images/intro__background-image.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-clip: content-box;
+  background-size: auto 836px;
+  position: relative;
+  max-height: 856px;
+  aspect-ratio: 856 / 610;
+
+  @media screen and (max-width: 1439px) {
+    background-size: 50% 100%;
+    padding: 20px 0 0 $paddingHorizontalSectionSmallDesktop;
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding: 20px 0 0 $paddingHorizontalSectionTablet;
+  }
+
+  @media screen and (max-width: 768px) {
+    background-size: auto 100%;
+    padding-left: 60px;
+    aspect-ratio: 348 / 254;
+    background-position: top right;
+  }
+
+  @media screen and (max-width: 730px) {
+    padding: 40px $paddingHorizontalSectionLargeMobile 0 $paddingHorizontalSectionLargeMobile;
+    background-size: auto 100%;
+    background-position: 300px 0;
+    @include flex(column, center, start)
+  }
+
+  @media screen and (max-width: 425px) {
+    background-size: auto 348px;
+    background-position: 48px 160px;
+    padding: 40px 0 0 $paddingHorizontalSectionMobile;
+  }
+}

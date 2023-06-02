@@ -1,0 +1,194 @@
+// Fonts
+$fontFamily: 'Inter', 'Arial', sans-serif;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+
+// Colors white theme
+$backgroundWhiteTheme: #f4f4f4;
+$footerBackgroundWhiteTheme: #efefef;
+$titleWhiteTheme: #151515;
+$textWhiteTheme: #222;
+$copyrightTextWhiteTheme: #cfcfcf;
+
+// Colors dark theme
+$backgroundDarkTheme: #333;
+$footerBackgroundDarkTheme: #2f2f2f;
+$titleDarkTheme: #fff;
+$textDarkTheme: #e5e5e5;
+$copyrightTextDarkTheme: #565656;
+
+//Colors button
+$buttonColor: #24b47e;
+$activeButtonColor: #319e75;
+$buttonTextColor: #fff;
+
+//Paddings
+$paddingHorizontalSection: 120px;
+$paddingHorizontalSectionSmallDesktop: 80px;
+$paddingHorizontalSectionTablet: 60px;
+$paddingHorizontalSectionLargeMobile: 40px;
+$paddingHorizontalSectionMobile: 18px;
+$paddingTitleToText: 50px;
+$paddingTitleToTextTablet: 30px;
+$paddingTitleToElementMobile: 40px;
+
+@mixin fontInter {
+  font-family: $fontFamily;
+  margin: 0;
+}
+
+@mixin flex($flex-direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+%sectionTitle {
+  @include fontInter;
+  font-weight: $bold;
+  font-size: calc(32px + 23 * (100vw / 1440));
+  line-height: calc(40px  + 20 * (100vw / 1440));
+  letter-spacing: -0.5px;
+  color: $titleWhiteTheme;
+  @media screen and (max-width: 320px) {
+    font-size: calc(32px  + (23 * 1.4) * ((100vw - 320px) / 1440));
+    line-height: calc(40px  + (20 * 1.4) * ((100vw - 320px) / 1440));
+  }
+  &_dark {
+    color: $titleDarkTheme;
+  }
+}
+
+%quoteText {
+  @include fontInter;
+  font-weight: $semiBold;
+  font-size: calc(23px  + 11 * (100vw / 1440));
+  line-height: calc(29px  + 15 * (100vw / 1440));
+  letter-spacing: -0.5px;
+  color: $titleWhiteTheme;
+  @media screen and (max-width: 320px) {
+    font-size: calc(23px  + (11 * 1.4) * ((100vw - 320px) / 1440));
+    line-height: calc(29px  + (15 * 1.4) * ((100vw - 320px) / 1440));
+  }
+  &_dark {
+    color: $titleDarkTheme;
+  }
+}
+
+%quoteAuthor {
+  @include fontInter;
+  font-weight: $medium;
+  font-size: calc(14px  + 6 * (100vw / 1440));
+  line-height: calc(22px  + 10 * (100vw / 1440));
+  color: $titleWhiteTheme;
+  @media screen and (max-width: 320px) {
+    font-size: calc(14px  + (6 * 1.4) * ((100vw - 320px) / 1440));
+    line-height: calc(22px  + (10 * 1.4) * ((100vw - 320px) / 1440));
+  }
+  &_dark {
+    color: $titleDarkTheme;
+  }
+}
+
+%quoteCaptionText {
+  @include fontInter;
+  font-weight: $regular;
+  font-size: calc(10px  + 4 * (100vw / 1440));
+  line-height: calc(16px  + 12 * (100vw / 1440));
+  color: $textWhiteTheme;
+  opacity: .7;
+  @media screen and (max-width: 320px) {
+    font-size: calc(10px  + (4 * 1.4) * ((100vw - 320px) / 1440));
+    line-height: calc(16px  + (12 * 1.4) * ((100vw - 320px) / 1440));
+  }
+  &_dark {
+    color: $textDarkTheme;
+  }
+}
+
+%mainText {
+  @include fontInter;
+  font-weight: $regular;
+  font-size: calc(12px  + 6 * (100vw / 1440));
+  line-height: calc(18px  + 10 * (100vw / 1440));
+  color: $textWhiteTheme;
+  opacity: .7;
+  @media screen and (max-width: 320px) {
+    font-size: calc(12px  + (6 * 1.4) * ((100vw - 320px) / 1440));
+    line-height: calc(18px  + (10 * 1.4) * ((100vw - 320px) / 1440));
+  }
+  &_dark {
+    color: $textDarkTheme;
+  }
+}
+
+%modelBikeText {
+  @include fontInter;
+  font-weight: $semiBold;
+  font-size: calc(14px  + 4 * (100vw / 1440));
+  line-height: calc(18px  + 4 * (100vw / 1440));
+  color: $textWhiteTheme;
+  @media screen and (max-width: 320px) {
+    font-size: calc(14px  + (4 * 1.4) * ((100vw - 320px) / 1440));
+    line-height: calc(18px  + (4 * 1.4) * ((100vw - 320px) / 1440));
+  }
+  &_dark {
+    color: $textDarkTheme;
+  }
+}
+
+%footerTitle {
+  @include fontInter;
+  font-weight: $semiBold;
+  font-size: 24px;
+  line-height: 32px;
+  color: $titleWhiteTheme;
+  &_dark {
+    color: $titleDarkTheme;
+  }
+}
+
+%copyrightText {
+  @include fontInter;
+  font-weight: $semiBold;
+  font-size: 14px;
+  line-height: 20px;
+  color: $copyrightTextWhiteTheme;
+  &_dark {
+    color: $copyrightTextDarkTheme;
+  }
+}
+
+%buttonText {
+  @include fontInter;
+  font-weight: $semiBold;
+  font-size: 14px;
+  line-height: 18px;
+  color: $buttonTextColor;
+  letter-spacing: 1px;
+
+  @media screen and (max-width: 320px) {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+
+%limitedWidthSection {
+  box-sizing: border-box;
+  max-width: 1440px;
+  width: 100%;
+}
+
+%zeroSpaces {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}

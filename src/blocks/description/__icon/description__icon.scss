@@ -1,0 +1,29 @@
+.description__icon {
+  width: 50px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  transition: all .5s ease;
+  box-sizing: border-box;
+  background-size: contain;
+
+  @media screen and (max-width: 1023px) {
+    width: 35px;
+  }
+}
+
+@keyframes switch-animation {
+  from {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.switch-icon {
+  animation: switch-animation .5s ease-in-out;
+}

@@ -1,0 +1,13 @@
+.merckx__author {
+  @extend %zeroSpaces;
+  @extend %quoteAuthor;
+  padding-top: 260px;
+
+  @media screen and (max-width: 1439px) {
+    padding-top: 10%;
+  }
+  
+  @media screen and (max-width: 425px) {
+    padding-top: 38px;
+  }
+}

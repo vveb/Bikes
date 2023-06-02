@@ -1,0 +1,12 @@
+.menu__container {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  @include flex(row, space-between, center);
+  column-gap: 34px;
+  height: 100%;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}

@@ -1,0 +1,19 @@
+.workout__image {
+  grid-area: image;
+  width: 580px;
+  display: block;
+
+  @media screen and (max-width: 1439px) {
+    width: 100%;
+    object-fit: cover;
+    align-self: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 100%;
+  }
+}

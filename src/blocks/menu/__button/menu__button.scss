@@ -1,0 +1,18 @@
+.menu__button {
+  @include flex(row, start, center);
+  cursor: pointer;
+  height: 19px;
+  width: 22px;
+  border: 0;
+  @extend %zeroSpaces;
+  display: none;
+  background-color: transparent;
+
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
+  
+  &:focus {
+    outline: none;
+  }
+}

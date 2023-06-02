@@ -1,0 +1,13 @@
+.intro__title {
+  @extend %sectionTitle;
+  padding-top: 60px;
+  max-width: 460px;
+
+  @media screen and (max-width: 1023px) {
+    max-width: 300px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 0;
+  }
+}

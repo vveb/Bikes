@@ -1,0 +1,10 @@
+.card__caption_type_inside {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: $semiBold;
+  }
+}

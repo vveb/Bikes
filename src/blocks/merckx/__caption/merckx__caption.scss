@@ -1,0 +1,12 @@
+.merckx__caption {
+  @extend %zeroSpaces;
+  @extend %quoteCaptionText;
+  align-self: end;
+  font-size: 16px;
+  padding-top: 6px;
+
+  @media screen and (max-width: 425px) {
+    font-size: 10px;
+    padding-top: 4px;
+  }
+}

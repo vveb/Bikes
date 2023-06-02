@@ -1,0 +1,22 @@
+.theme-switcher__button {
+  width: 44px;
+  height: 24px;
+  border-radius: 9999px;
+  border: 0;
+  background-color: #fff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 22px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transition: padding .5s;
+
+  &_on {
+    padding-right: 2px;
+    padding-left: 22px;
+    background-color: #545454;
+  }
+}

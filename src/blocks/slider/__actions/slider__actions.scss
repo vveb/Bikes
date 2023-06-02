@@ -1,0 +1,22 @@
+.slider__actions {
+  margin-top: 50px;
+  @include flex(row, start, center);
+  max-width: 120px;
+  box-sizing: border-box;
+  column-gap: 20px;
+  background-size: contain;
+  border: 1px solid transparent;
+
+  @media screen and (max-width: 425px) {
+    position: absolute;
+    right: 0px;
+    top: 2%;
+    margin-top: 0;
+    max-width: 58px;
+    column-gap: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    box-sizing: content-box;
+    background-color: $backgroundWhiteTheme;
+  }
+}

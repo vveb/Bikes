@@ -1,0 +1,7 @@
+.card__image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  transform: scale(1);
+  transition: transform 1s ease;
+}
