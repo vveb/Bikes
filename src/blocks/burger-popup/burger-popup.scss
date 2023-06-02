@@ -1,0 +1,15 @@
+.burger-popup {
+  @include flex(column, space-between, center);
+  width: 100%;
+  max-width: 600px;
+  padding: 70px 55px 36px;
+  position: fixed;
+  top:75px;
+  background-color: $backgroundWhiteTheme;
+  translate: 0 -150%;
+  transition: translate 1s ease;
+  
+  &_opened {
+    translate: 0;
+  }
+}
