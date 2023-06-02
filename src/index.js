@@ -17,7 +17,7 @@ initThemeSwitcher();
 const subscribeForm = document.forms['subscribe-form'];
 const subscribeFormInput = document.forms['subscribe-form']['subscribe-form-input'];
 const subscribeFormButton = document.forms['subscribe-form']['subscribe-form-submit-button'];
-subscribeFormInput.addEventListener('input', (evt) => {
+subscribeFormInput.addEventListener('input', () => {
   subscribeFormButton.classList.remove('form__submit-button_hidden');
   if (subscribeFormInput.value === '') {
     subscribeFormButton.classList.add('form__submit-button_hidden');

@@ -1,4 +1,10 @@
 .footer__bottom-box {
   @include flex(row, space-between, baseline);
   width: 100%;
+  margin-top: 87px;
+
+  @media screen and (max-width: 425px) {
+    align-items: center;
+    margin-top: 90px;
+  }
 }
