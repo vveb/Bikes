@@ -4,7 +4,7 @@
 
 ## 🌐 Ссылки
 
-* [Bicycles]() - страница на хостинге GH Pages;
+* [Bicycles](https://vveb.github.io/Bikes/) - страница на хостинге GH Pages;
 * [Figma](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings_external-link?type=design&node-id=0-1&t=CgedVv0dBz0V0RKf-0) - макет проекта;
 
 ---
@@ -65,13 +65,13 @@ HTML, CSS & SASS, JavaScript, WebPack, GitHub
 ## 💪 Разработка
 
 Разработка велась единолично
-[Виктор Тарапата](https://github.com/vveb) ✊\
+[Виктор Тарапата](https://github.com/vveb) ✊
 
 ---
 
 ### 📜 Инструкция по запуску на локальной машине
 
 - Установить [Node.js](https://nodejs.org/ru/)
-- Клонировать репозиторий ` git clone git@github.com:Andrey-Grishkov/Everland.git`
+- Клонировать репозиторий ` git clone git@github.com:vveb/Bikes.git`
 - Установить зависимости `npm install`
 - Запустить приложение `npm run dev`
