@@ -1,8 +1,25 @@
 .header {
   @extend %limitedWidthSection;
   @include flex(row-reverse, space-between, center);
-  padding: 28px 120px 28px 0;
+  padding: 28px $paddingHorizontalSection 28px 0;
   box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: inherit;
+  box-shadow: 0 2px 20px 0 lightgray;
+
+  @media screen and (max-width: 1439px) {
+    padding-right: $paddingHorizontalSectionSmallDesktop;
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding-right: $paddingHorizontalSectionTablet;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-right: $paddingHorizontalSectionLargeMobile;
+  }
 
   @media screen and (max-width: 600px) {
     padding: 28px $paddingHorizontalSectionMobile;
